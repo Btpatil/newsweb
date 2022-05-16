@@ -5,7 +5,7 @@ let newsdom = document.getElementById("news")
 
 // create ajax  get request
 let xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`, true);
+xhr.open('GET', `http://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`, true);
 
 xhr.onload = function () {
     if (this.status === 200) {
